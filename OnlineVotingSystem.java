@@ -156,7 +156,7 @@ class OnlineVotingSystem {
             System.out.println("Error displaying results.");
         }
     }
-    // ================= CHECK USER EXISTS =================
+    //CHECK USER EXISTS 
     static boolean userExists(String username) throws IOException {
         File file = new File(USER_FILE);
         if (!file.exists()) return false;
@@ -173,4 +173,5 @@ class OnlineVotingSystem {
         br.close();
         return false;
     }
+
 }
